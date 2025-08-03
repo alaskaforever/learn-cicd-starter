@@ -2,7 +2,7 @@ package auth
 
 import (
 	"net/http"
-//	"strings"
+	//	"strings"
 	"testing"
 )
 
@@ -71,4 +71,3 @@ func TestGetAPIKey(t *testing.T) {
 		})
 	}
 }
-
