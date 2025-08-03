@@ -37,5 +37,10 @@ jobs:
       - name: Check style
         run: test -z $(go fmt ./...)
 
+      - name: set up Lint (staticcheck)
+        uses: dominikh/staticcheck-action@v1
+        with:
+          version: "latest"
+
       - name: Lint
         run: staticcheck ./...
