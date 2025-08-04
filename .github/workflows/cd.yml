@@ -15,7 +15,6 @@ jobs:
       - name: Build
         run: scripts/buildprod.sh
   job_id:
-    name: Setup gcloud
     runs-on: ubuntu-latest
     steps:
     - id: 'auth'
